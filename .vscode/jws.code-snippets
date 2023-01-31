@@ -5,8 +5,8 @@
     "prefix": "jwshead",
     "description": "A snippet to add head",
     "body": [
-      "<meta name=\"description\" content=\"Jasmine Website Starter - One Column Template\">",
-      "<meta name=\"author\" content=\"Your Name\">",
+      "<meta name=\"description\" content=\"Your Description Here\">",
+      "<meta name=\"author\" content=\"Your Name Here\">",
       "<link rel=\"stylesheet\" href=\"css/style.css\">",
     ]
   },
