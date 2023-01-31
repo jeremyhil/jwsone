@@ -1,4 +1,8 @@
 {
-    "scripts": [],
-    "styles": []
-  }
+  "title": "HTML-Only",
+  "files": [
+    {
+      "filename": "index.html"
+    }
+  ]
+}
