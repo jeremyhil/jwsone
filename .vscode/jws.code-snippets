@@ -1,6 +1,16 @@
 {  // JasmineWS.uk Snippets v1.0.0 | MIT License | Copyright 2023 JasmineDesign.com
    // github.com/jasminedesign/jwsone | github.com/jasminedesign/jwstwo
-  "jwspage": {
+   "jwshead": {
+    "scope": "html",
+    "prefix": "jwshead",
+    "description": "A snippet to add head",
+    "body": [
+      "<meta name=\"description\" content=\"Jasmine Website Starter - One Column Template\">",
+      "<meta name=\"author\" content=\"Your Name\">",
+      "<link rel=\"stylesheet\" href=\"css/style.css\">",
+    ]
+  },
+   "jwspage": {
     "scope": "html",
     "prefix": "jwspage",
     "description": "A snippet to add page sections",
