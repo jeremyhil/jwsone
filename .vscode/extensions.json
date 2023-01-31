@@ -4,8 +4,8 @@
 
 	// List of extensions which should be recommended for users of this workspace.
 	"recommendations": [
-		"lostintangent.codeswing",
-		"microsoft.vscode-livepreview"
+		"codespaces-contrib.codeswing",
+		"ms-vscode.live-server"
 
 	],
 	// List of extensions recommended by VS Code that should not be recommended for users of this workspace.
