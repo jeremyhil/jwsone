@@ -5,8 +5,8 @@
     "prefix": "jwshead",
     "description": "A snippet to add head",
     "body": [
-      "<meta name=\"description\" content=\"Your Description Here\">",
-      "<meta name=\"author\" content=\"Your Name Here\">",
+      "<meta name=\"description\" content=\"${1:Your Description Here}\">",
+      "<meta name=\"author\" content=\"${2:Your Name Here}\">",
       "<link rel=\"stylesheet\" href=\"../css/style.css\">",
     ]
 },
