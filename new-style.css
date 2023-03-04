@@ -1,7 +1,7 @@
 /* JasmineWS.uk CSS v1.0.0 | MIT License | Copyright 2023 JasmineDesign.com
-   github.com/jasminedesign/jwsone */
+   github.com/jasminedesign/jwsone | github.com/jasminedesign/jwstwo */
 
-:root {
+   :root {
     --color-body-background: rgb(255, 255, 255);
     --color-secondary-background: rgb(251, 248, 248);
     --color-text: rgb(70, 70, 70);
@@ -148,7 +148,7 @@ a {
 	cursor: pointer;
 }
 a:hover {text-decoration: none;}
-a:focus-visible {outline: medium dashed var(--color-border);}
+a:focus-visable {outline: medium dashed var(--color-border);}
 
 /* ------ Lists - ordered & unordered ------ */
 ul, ol {
@@ -385,7 +385,7 @@ nav a:focus {
     color: var(--color-two-nav-btn);
     background-color: var(--color-one-nav-btn);
     text-decoration: none;
-    outline: unset; 
+    outline: unset;
 }
 nav a[aria-current="page"],
 nav a:active {
