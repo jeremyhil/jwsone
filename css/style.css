@@ -1,7 +1,8 @@
-/* JasmineWS.uk CSS v1.0.0 | MIT License | Copyright 2023 JasmineDesign.com
+/* JasmineWS.uk CSS v1.0.1 | MIT License | Copyright 2023 JasmineDesign.com
    github.com/jasminedesign/jwsone */
 
 :root {
+    color-scheme: light dark;
     --color-body-background: rgb(255, 255, 255);
     --color-secondary-background: rgb(251, 248, 248);
     --color-text: rgb(70, 70, 70);
@@ -26,7 +27,6 @@
     --font-family-code: ui-monospace, Consolas, Monaco, SFMono-Regular, SF Mono, Menlo, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Mono", "Source Code Pro", "Fira Mono", "Droid Sans Mono", monospace;
     --font-family-serif: 'Palatino', Georgia, serif;
     --icon-hover: drop-shadow(2px 2px 3px rgb(104, 142, 163));
-    
 }
 
 @media (prefers-color-scheme: dark) {
@@ -78,9 +78,9 @@ body {
 /* ------ Typography ------ */
 h1, h2, h3, h4, h5, h6 {
     margin: .5rem 0;
-    padding: 0;
     color: var(--color-headings);
     text-align: center;
+    font-weight: 700;
 }
 h1 {font-size: 2rem;}
 h2 {font-size: 1.75rem;}
@@ -119,7 +119,7 @@ blockquote {
 hr { border: none; border-top: 1px solid var(--color-border); width: 100%;}
 details {padding: .5rem 0; border-bottom: solid 1px var(--color-border); margin-bottom: 1rem;}
 summary {color: var(--color-headings); font-family: var(--font-family-serif); font-weight: 600;}
-summary:focus {outline: medium dashed var(--color-border);}
+summary:focus-visible {outline: medium dashed var(--color-border);}
 .bg_col {background-color: var(--color-secondary-background);}
 .padding1 {padding: 1rem;}
 
