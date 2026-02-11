@@ -1,4 +1,4 @@
-/* JasmineWS.uk CSS v1.0.1 | MIT License | Copyright 2023 JasmineDesign.com
+/* JasmineWS.uk CSS v1.0.4 | MIT License | Copyright 2023 - 2026 JasmineDesign.com
    github.com/jasminedesign/jwsone */
 
 :root {
@@ -11,6 +11,7 @@
     --color-border: rgb(0, 128, 128);
     --color-border-dark: rgb(0, 85, 85);
     --color-border-footer: rgb(211, 211, 211);
+    --color-code: rgb(128, 0, 0);
     /*---- nav & buttons ----*/    
     --color-one-nav-btn: rgb(0, 85, 85);
     --color-two-nav-btn: rgb(255, 255, 255);
@@ -27,6 +28,7 @@
     --font-family-code: ui-monospace, Consolas, Monaco, SFMono-Regular, SF Mono, Menlo, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Mono", "Source Code Pro", "Fira Mono", "Droid Sans Mono", monospace;
     --font-family-serif: 'Palatino', Georgia, serif;
     --icon-hover: drop-shadow(2px 2px 3px rgb(104, 142, 163));
+    interpolate-size: allow-keywords;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -38,6 +40,7 @@
         --color-links: rgb(255, 168, 98);
         --color-border: rgb(0, 128, 128);
         --color-border-dark: rgb(0, 85, 85);
+        --color-code: rgb(126, 231, 135);
         /*---- nav & buttons ----*/    
         --color-one-nav-btn: rgb(255, 255, 255);
         --color-two-nav-btn: rgb(0, 85, 85);
@@ -49,7 +52,7 @@
         --color-form-legend: rgb(104, 142, 163);
         --color-form-label: rgb(113, 176, 243);
         --color-form-error: rgb(237, 126, 36);
-        --icon-hover:  opacity(0.2);
+        --icon-hover: opacity(0.2);
     }
     .social_icons img {
     filter: invert(1);
@@ -57,14 +60,14 @@
 }
 
 *, *:after, *:before { box-sizing: border-box; }
-html { 
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Segoe, Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.375;
+html {
     margin: 0;
     padding: 0;
 }
 body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Segoe, Helvetica, Arial, sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.5;
     display: grid;
     grid-template: auto 1fr auto / 1fr;
     min-height: 100vh;
@@ -73,7 +76,6 @@ body {
     padding: 0;
     color: var(--color-text);
     background-color: var(--color-body-background);
-    font-size: 1.1rem;
 }
 /* ------ Typography ------ */
 h1, h2, h3, h4, h5, h6 {
@@ -89,9 +91,7 @@ h4 {font-size: 1.3rem;}
 h5 {font-size: 1.2rem; font-weight: 400;}  
 h6 {font-size: 1rem; font-weight: 400;}
 p {margin: 0 0 .5rem; word-wrap: break-word;}
-.second_font { 
-    font-family: var(--font-family-serif);
-}
+.second_font {font-family: var(--font-family-serif);}
 .shouty_text {
     font-size: 1.3rem;
     font-weight: 600;
@@ -127,9 +127,9 @@ summary:focus-visible {outline: medium dashed var(--color-border);}
 address {font-style: normal; display: flex; flex-direction: column;}
 address a {color: var(--color-text); padding-bottom: .5rem;}
 
-/* ------ Code  ------ */
+/* ------ Code ------ */
 pre { margin: 0; padding: 0; tab-size: 4; white-space: pre-wrap; line-height:1.5; font-family: var(--font-family-code); background-color: var(--color-secondary-background); padding: .5rem; margin: 0 0 .5rem;}
-code { font-family: var(--font-family-code); color: var(--color-col3);}
+code { font-family: var(--font-family-code); color: var(--color-code);}
 samp {font-family: var(--font-family-code);}
 kbd {
     border: 1px solid var(--color-border);
@@ -192,13 +192,13 @@ li ul li ul {
 
 /* ------ Lists - Description ------ */
 dt {
-    font-size: 18px;
+    font-size: 1.2rem;
     font-weight: bold;
     color: var(--color-sub-heading);
 }
 dl,
 dd {
-    font-size: 16px;
+    font-size: 1rem;
 }
 dd {
     margin-bottom: 1rem;
@@ -268,7 +268,7 @@ select {
     cursor: pointer;
     border: none;
     font-family: inherit;
-    font-size: 16px;
+    font-size: inherit;
     height: auto;
     outline: 0;
     padding: 15px;
@@ -299,7 +299,7 @@ form button {
     color: var(--color-one-nav-btn);
     background-color: var(--color-two-nav-btn);
     font-family: inherit;
-    font-size: 1rem;
+    font-size: inherit;
     font-weight: 600;
     font-style: normal;
     border-radius: 5px;
@@ -315,7 +315,7 @@ fieldset {
 }
 legend {
     color: var(--color-form-legend);
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -420,31 +420,30 @@ main {
 .panel_half {
     display: flex;
     flex-direction: column;
-    flex:1 1 47%;
+    flex: 1 1 47%;
 }
 .panel_third {
     display: flex;
     flex-direction: column;
-    flex:1 1 32%;
+    flex: 1 1 32%;
 }
 .panel_two_thirds {
     display: flex;
     flex-direction: column;
-    flex:1 1 62%;
+    flex: 1 1 62%;
 }
 @media screen and (min-width: 768px) {
     .panel_half {
-    flex:0 1 47%;
+    flex: 0 1 47%;
 }
 .panel_third {
-    flex:0 1 32%;
+    flex: 0 1 32%;
 }
 .panel_two_thirds {
-    flex:0 1 62%;
+    flex: 0 1 62%;
 }
 }
 /* -------- Text Panels (100% across in mobile) -------- */
-
 .text_panel {
     display: flex;
     flex-direction: column;
@@ -551,7 +550,6 @@ footer {
     width: auto;
     max-height: 30px;
 }
-
 .contact_panel {
     display: flex;
     flex-direction: column;
